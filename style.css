@@ -1,0 +1,76 @@
+.cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    background-color: lightgray;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.card {
+    border: 2px solid black !important;
+    padding: 20px;
+
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 !important;
+    background-color: transparent !important;
+}
+
+.bi-heart.active {
+    color: red;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 400px !important;
+}
+
+.priceTot {
+    position: absolute;
+    z-index: 155;
+    top: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+
+}
