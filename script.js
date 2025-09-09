@@ -10,8 +10,6 @@ for (let i = 0; i < btnPlus.length; i++) {
         const priceValue = Number(price[i].innerText);
         const totaleValue = Number(totale[0].innerText);
         totale[0].innerText = totaleValue + priceValue
-
-
     })
 }
 
@@ -51,12 +49,16 @@ for (let i = 0; i < heart.length; i++) {
 
 var trash = document.querySelectorAll('.trash')
 var card = document.querySelectorAll('.card')
-// console.log(btnPlus)
+var numm = document.querySelectorAll('.num');
 
 
 for (let i = 0; i < trash.length; i++) {
     trash[i].addEventListener('click', function () {
         card[i].style.display = 'none'
+        const priceValue = Number(price[i].innerText);
+        const totaleValue = Number(totale[0].innerText);
+        const num = Number(numm[i].innerText);
+        totale[0].innerText = totale[0].innerText - (num * priceValue)
     })
 }
 
